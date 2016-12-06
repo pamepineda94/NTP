@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Spot</title>
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/material.blue-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/material.min.js">
+    function onLoad() {
+           document.addEventListener("deviceready", onDeviceReady, false);
+       }
+
+       // Cordova is loaded and it is now safe to call Cordova methods
+       //
+       function onDeviceReady() {
+           // Register the event listener
+           document.addEventListener("backbutton", onBackKeyDown, false);
+       }
+
+       // Handle the back button
+       //
+       function onBackKeyDown() {
+       }
+    </script>
+</head>
+
+<body onload="onLoad()">
+
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js">
+  </script>
+  <link rel="stylesheet" href="./material.min.css">
+<script src="./material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Spot</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation">
+                  <button  class="mdl-button mdl-js-button mdl-button--icon" onclick="history.go(-1);">
+         <i class="material-icons">arrow_back</i>
+        </button>
+
+      </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Spot</span>
+            <nav class="mdl-navigation">
+                <a id="lugares" class="mdl-navigation__link" href="lugares.html">Lugares</a>
+                <a id="eanimo" class="mdl-navigation__link" href="estadosAnimo.html">Viajar por estado de ánimo</a>
+                <a id="experi" class="mdl-navigation__link" href="experi.html">Mis Experiencias</a>
+                <a id="gastos" class="mdl-navigation__link" href="gatos.html">Mis Gastos</a>
+                <a id="album" class="mdl-navigation__link" href="album.html">Mi Album</a>
+            </nav>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="mdl-layout2 mdl-js-layout mdl-color--grey-100">
+        <main class="mdl-layout__content2">
+            <div class="mdl-card mdl-shadow--6dp">
+
+            <div class="mdl-card__supporting-text">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="username" />
+                            <label class="mdl-textfield__label" for="username">Experiencia</label>
+                        </div>
+
+               </form>
+           </div>
+           <div class="mdl-card__actions mdl-card--border">
+               <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Guardar</button>
+           </div>
+       </div>
+   </main>
+</div>
+
+
+
+</body>
+
+</html>

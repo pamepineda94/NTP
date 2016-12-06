@@ -10,3 +10,4 @@
     <content src="index.html" />
     <access origin="*" />
 </widget>
+<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
